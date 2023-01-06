@@ -1,10 +1,9 @@
 # Python
 1-Calculator project with standard and programmer mode
    -Using eval() function which allows to evaluate arbitrary Python expressions from a string-based or compiled-code-based input. it can be usefuk in dynamically            evaluatation.
-   
-   ![Uploading Calculator.gif…]()
   
-   
+![Calculator](https://user-images.githubusercontent.com/115734048/211109895-4c105c41-5414-477a-9f1b-0946eec6f4fc.gif)
+
 2-Grocery Shop project with owner mode or customer mode
    -Using dictionary to collect data and access it to edit in types or price or quantity.
    
@@ -17,4 +16,8 @@
 
 4-2sabbShop project with GUI
    -Using tkinter to make GUI 
+
+![2sabShop](https://user-images.githubusercontent.com/115734048/211109606-7ec3ed8c-e74d-4a05-a93c-93021cf92f6a.gif)
+
+
 

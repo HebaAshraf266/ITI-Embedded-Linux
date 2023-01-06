@@ -16,8 +16,9 @@
 
 4-2sabbShop project with GUI
    -Using tkinter to make GUI 
+   
+![2sabShop](https://user-images.githubusercontent.com/115734048/211111139-20948bb6-8c96-4278-9b00-19c5bb3e20aa.gif)
 
-![2sabShop](https://user-images.githubusercontent.com/115734048/211109606-7ec3ed8c-e74d-4a05-a93c-93021cf92f6a.gif)
 
 
 

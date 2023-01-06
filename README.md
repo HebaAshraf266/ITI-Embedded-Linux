@@ -4,7 +4,9 @@
   
    
 2-Grocery Shop project with owner mode or customer mode
-   -Using dictionary to collect data and access it to make edit in list or price or quantity.
+   -Using dictionary to collect data and access it to edit in types or price or quantity.
+   
+![GroceryShop](https://user-images.githubusercontent.com/115734048/211105236-015a4f1b-782d-43cd-83f7-8861da017273.gif)
    
  
 3-Rotaryarrow project

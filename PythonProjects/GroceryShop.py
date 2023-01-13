@@ -53,16 +53,16 @@ while Status:
              print("-"*40) #--> Separator
              if x==1:
                 Fruit_type=input("Enter Fruit type you want to buy: ")
-				#add item to bag
+		#add item to bag
                 Customer_Dict["Bag"].append(Grocerry_Items["Types"][Grocerry_Items["Types"].index(Fruit_type)])  
                 print(Customer_Dict["Bag"])
 
                 quantity=int(input("Enter the quantity you want to buy: "))
-				#add quantity of items 
+		#add quantity of items 
                 Customer_Dict["Quantity"].append(quantity)
                 print("Quantity= " ,Customer_Dict["Quantity"])
 
-				#Calculate remaining items in shop
+		#Calculate remaining items in shop
                 Grocerry_Items["Quantity"][Grocerry_Items["Types"].index(Fruit_type)] -=quantity
                 print("Available quantity for each type= ",Grocerry_Items["Quantity"])
 
@@ -77,7 +77,7 @@ while Status:
 					#To calculate total cost
                     TotalCost+=bill
                 print("Total cost= ",end="")
-				#Append total cost to dictionary
+		#Append total cost to dictionary
                 Customer_Dict["Bill"].append(TotalCost)
                 print(TotalCost)
 
@@ -102,15 +102,15 @@ while Status:
                 print("-"*40) #--> Separator
 
              elif owner_choice==2:
-				#Append new type to dictionary
+		#Append new type to dictionary
                 Add_choice=input("Enter name of the new product: ")
                 Grocerry_Items["Types"].append(Add_choice)
                 
-				#Append new quantity of the new type
+		#Append new quantity of the new type
                 Add_choiceQ=int(input("Enter quantity of the new product: "))
                 Grocerry_Items["Quantity"].append(Add_choiceQ)
 	
-				#Append cost of the new type
+		#Append cost of the new type
                 Add_choiceP=int(input("Enter cost of the new product: "))
                 Grocerry_Items["Price"].append(Add_choiceP)
 

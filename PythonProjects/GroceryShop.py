@@ -136,5 +136,5 @@ while Status:
  else: 
 		Status=False
 	
-
+#To print bill in a table 
 print(tabulate(Customer_Dict, headers=Shop_Header, tablefmt='grid'))

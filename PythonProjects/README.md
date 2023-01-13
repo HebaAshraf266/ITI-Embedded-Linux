@@ -13,7 +13,7 @@
 
 ![RotatingArrow](https://user-images.githubusercontent.com/115734048/211103352-24278aa9-479e-4ce1-ab59-6940341f65cb.gif)
 
-4-2sabbShop project with GUI![GroceryShop](https://user-images.githubusercontent.com/115734048/212404155-05632f30-63c5-4c3e-a6a4-fe81419a775b.gif)
+4-2sabbShop project with GUI
    -Using tkinter to make GUI 
    -Store data in Excel
    

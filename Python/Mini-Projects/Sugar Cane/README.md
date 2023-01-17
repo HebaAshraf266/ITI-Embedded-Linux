@@ -1,4 +1,4 @@
-**Sugar cane Shop**
+# **Sugar cane Shop**
 >Python project with GUI and database 
  >- Using tkinter to make GUI 
  >- Using CSV to store data in Excel

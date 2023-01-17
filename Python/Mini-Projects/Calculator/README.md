@@ -1,4 +1,4 @@
-**Calculator**
+# **Calculator**
 > Python project with standard and programmer mode
    >- Using eval() function which allows to evaluate arbitrary Python expressions from a string-based or compiled-code-based input. it can be useful in dynamically            evaluatation.
   

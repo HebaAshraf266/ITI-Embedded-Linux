@@ -1,4 +1,4 @@
-# **Grocery Shop project**
+# **Grocery Shop **
 >Python project with owner mode and customer mode
    >- Using dictionary to collect and accessing data to modify in key values such as types, price and quantity.
   

@@ -8,10 +8,6 @@ Small_cost=0
 S_Total_cost=0
 TotalCost=0
 
-print("Cost of Larage = 30")
-print("Cost of Meduim = 20")
-print("Cost of Small = 10")
-
 # Functions to calculate quantities + price
 def ButtonPressLarage():
 	ButtonPressLarage.counter +=1 
@@ -61,29 +57,39 @@ Shop.title = ("BEST 2SAB")
 label_1=Label(Shop,text="Welcome to Hussien 2sab Shop ",bg = "khaki2")
 label_1.pack(side=TOP)
 
-
 Shop.geometry ('500x500')
 
-# Addi photo in background
+# Add photo in background
 photo1 = PhotoImage(file='2sab.png')
 label2 = Label( Shop, image = photo1)
 label2.place(x = 0,y = 25)
 
+# Add photo in buttons
+Photo_1 = PhotoImage(file='2saab.PNG')
+SmallSize =  Photo_1.subsample(5,5)
+MediumSize = Photo_1.subsample(4,4)
+LargeSize =  Photo_1.subsample(3,3)
 
-B1= Button(Shop, text="Larage",width=8,height=2 ,bg="DarkOliveGreen3", fg="black",bd='5', command = ButtonPressLarage)
-B1.place(x=20, y=40)
+#Buttons to choose size
+B1= Button(Shop,bg="DarkOliveGreen3", fg="black",bd='5', image=SmallSize,command = ButtonPressSmall)
+B1.place(x=30, y=60)
+lab1=Label(Shop,text="10LE",font=('Courier',10)).place(x=50,y=40)
 
-B2= Button(Shop, text="Medium", width=8,height=2 ,bg="DarkOliveGreen3", fg="black",bd='5', command = ButtonPressMedium)
-B2.place(x=20, y=90)
+B2= Button(Shop,bg="DarkOliveGreen3", fg="black",bd='5',image=MediumSize, command = ButtonPressMedium)
+B2.place(x=30, y=180)
+lab2=Label(Shop,text="20LE",font=('Courier',10)).place(x=60,y=160)
 
-B3= Button(Shop, text="Small", width=8,height=2 ,bg="DarkOliveGreen3", fg="black",bd='5', command = ButtonPressSmall)
-B3.place(x=20, y=140)
+B3= Button(Shop,bg="DarkOliveGreen3", fg="black",bd='5',image=LargeSize, command = ButtonPressLarage)
+B3.place(x=30, y=315)
+lab3=Label(Shop,text="30LE",font=('Courier',10)).place(x=70,y=295)
 
-B4= Button(Shop, text="Exit", width=8,height=2 ,bg="DarkOliveGreen3", fg="black",bd='5',command = Shop.destroy)
-B4.place(x=280, y=400)
+#Button to close window
+B4= Button(Shop, text="Exit", width=7,height=1 ,bg="DarkOliveGreen3", fg="black",bd='10',command = Shop.destroy)
+B4.place(x=270, y=458)
 
-B5= Button(Shop, text="TotalCost", width=8,height=2 ,bg="DarkOliveGreen3", fg="black",bd='5', command = ButtonTotalCost)
-B5.place(x=180, y=400)
+#Button to Claculate total cost
+B5= Button(Shop, text="TotalCost", width=7,height=1 ,bg="DarkOliveGreen3", fg="black",bd='10', command = ButtonTotalCost)
+B5.place(x=180, y=458)
 
 Shop.mainloop()
 

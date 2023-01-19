@@ -3,6 +3,5 @@
  >- Using tkinter to make GUI 
  >- Using CSV to store data in Excel
    
-![2sabShop](https://user-images.githubusercontent.com/115734048/211112436-2589ef96-657e-4f0d-98f4-5f28869c0a0e.gif)
 
-
+![SugarShop](https://user-images.githubusercontent.com/115734048/213588099-c50ac11b-223b-4e73-89e7-82e6373aeeb1.gif)

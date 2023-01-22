@@ -1,13 +1,22 @@
 #Grocerry Shop 
-
-import time
+import csv
 from tabulate import tabulate
 
 Grocerry_Items={               # -->Dictionary 
-"Types":["Apple","Banana","Cherry"],
-"Quantity":[40, 30, 70],
-"Price":[15, 20, 25]
+"Types":[],
+"Quantity":[],
+"Price":[]
 }
+
+#create new file
+# csv_file=open("product.csv","x")
+with open("product.csv" , mode="r")  as csv_file:
+	csvfile=csv.DictReader(csv_file)
+	#displaying  contents of the csv file 
+	for lines in csvfile:
+		Grocerry_Items["Types"].append(lines["Types"])
+		Grocerry_Items["Quantity"].append(lines["Quantity"])
+		Grocerry_Items["Price"].append(lines["Price"])
 
 Customer_Dict={
 "Bag": [],
@@ -137,4 +146,14 @@ while Status:
 		Status=False
 	
 
+#Print bill
+print("\n\n\n---Welcome to ITI shop---\n")
 print(tabulate(Customer_Dict, headers=Shop_Header, tablefmt='grid'))
+
+with open("product.csv", "w", newline = '') as csv_file:
+    # Pass the csv file to csv.writer function
+    writer = csv.writer(csv_file)
+    # Pass the dictionary keys to writerow function to frame the columns of the csv file
+    writer.writerow(Grocerry_Items.keys())
+    # Make use of writerows function to append the remaining values to the corresponding columns 
+    writer.writerows(zip(*Grocerry_Items.values()))

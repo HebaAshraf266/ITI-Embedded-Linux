@@ -185,22 +185,10 @@ class WithdrawPage(tk.Frame):
                                                        height=5)
         eighty_button.grid(row=3,column=0,pady=5)
 
-        one_hundred_button = tk.Button(button_frame,
-                                                       text='400',
-                                                       command=lambda:withdraw(400),
-                                                       relief='raised',
-                                                       borderwidth=3,
-                                                       width=50,
-                                                       height=5)
+        one_hundred_button = tk.Button(button_frame,text='400', command=lambda:withdraw(400), relief='raised',borderwidth=3, width=50, height=5)
         one_hundred_button.grid(row=0,column=1,pady=5,padx=555)
 
-        two_hundred_button = tk.Button(button_frame,
-                                                       text='500',
-                                                       command=lambda:withdraw(500),
-                                                       relief='raised',
-                                                       borderwidth=3,
-                                                       width=50,
-                                                       height=5)
+        two_hundred_button = tk.Button(button_frame,text='500',command=lambda:withdraw(500),relief='raised',borderwidth=3,width=50, height=5)
         two_hundred_button.grid(row=1,column=1,pady=5)
 
         Another_Choice_Label = tk.Label(button_frame, text='Enter another choice below',relief='raised',borderwidth=3,width=50,
@@ -241,28 +229,17 @@ class DepositPage(tk.Frame):
         tk.Frame.__init__(self, parent,bg='RosyBrown4')
         self.controller = controller
 
-        heading_label = tk.Label(self,
-                                                     text='ITI ATM',
-                                                     font=('orbitron',45,'bold'),
-                                                     foreground='#ffffff',
-                                                     background='RosyBrown4')
+        heading_label = tk.Label(self, text='ITI ATM',font=('orbitron',45,'bold'),foreground='#ffffff', background='RosyBrown4')
         heading_label.pack(pady=25)
 
         space_label = tk.Label(self,height=4,bg='RosyBrown4')
         space_label.pack()
 
-        enter_amount_label = tk.Label(self,
-                                                      text='Enter amount',
-                                                      font=('orbitron',13),
-                                                      bg='RosyBrown4',
-                                                      fg='white')
+        enter_amount_label = tk.Label(self,text='Enter amount',font=('orbitron',13), bg='RosyBrown4', fg='white')
         enter_amount_label.pack(pady=10)
 
         cash = tk.StringVar()
-        deposit_entry = tk.Entry(self,
-                                                  textvariable=cash,
-                                                  font=('orbitron',12),
-                                                  width=22)
+        deposit_entry = tk.Entry(self,textvariable=cash, font=('orbitron',12), width=22)
         deposit_entry.pack(ipady=7)
 
         def deposit_cash():
@@ -272,13 +249,7 @@ class DepositPage(tk.Frame):
             controller.show_frame('MenuPage')
             cash.set('')
             
-        enter_button = tk.Button(self,
-                                                     text='Enter',
-                                                     command=deposit_cash,
-                                                     relief='raised',
-                                                     borderwidth=3,
-                                                     width=40,
-                                                     height=3)
+        enter_button = tk.Button(self, text='Enter', command=deposit_cash,relief='raised', borderwidth=3, width=40, height=3)
         enter_button.pack(pady=10)
 
         two_tone_label = tk.Label(self,bg='RosyBrown4')
@@ -306,21 +277,12 @@ class BalancePage(tk.Frame):
         self.controller = controller
 
         
-        heading_label = tk.Label(self,
-                                                     text='ITI ATM',
-                                                     font=('orbitron',45,'bold'),
-                                                     foreground='#ffffff',
-                                                     background='RosyBrown4')
+        heading_label = tk.Label(self, text='ITI ATM',font=('orbitron',45,'bold'),foreground='#ffffff',background='RosyBrown4')
         heading_label.pack(pady=25)
 
         global current_balance
         controller.shared_data['Balance'].set(current_balance)
-        balance_label = tk.Label(self,
-                                                  textvariable=controller.shared_data['Balance'],
-                                                  font=('orbitron',13),
-                                                  fg='white',
-                                                  bg='RosyBrown4',
-                                                  anchor='w')
+        balance_label = tk.Label(self,textvariable=controller.shared_data['Balance'],font=('orbitron',13), fg='white', bg='RosyBrown4',anchor='w')
         balance_label.pack(fill='x')
 
         button_frame = tk.Frame(self,bg='RosyBrown4')
@@ -329,13 +291,7 @@ class BalancePage(tk.Frame):
         def menu():
             controller.show_frame('MenuPage')
             
-        menu_button = tk.Button(button_frame,
-                                                    command=menu,
-                                                    text='Menu',
-                                                    relief='raised',
-                                                    borderwidth=3,
-                                                    width=50,
-                                                    height=5)
+        menu_button = tk.Button(button_frame,command=menu,text='Menu',relief='raised',borderwidth=3,  width=50, height=5)
         menu_button.grid(row=0,column=0,pady=5)
 
         def exit():

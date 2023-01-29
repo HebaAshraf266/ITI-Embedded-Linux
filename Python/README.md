@@ -1,6 +1,6 @@
 # Python
 
-## This repository contains all required projects in ITI
+## This repository contains all python projects done in ITI journey
  **01-Rotary Arrow**
  
 ![RotatingArrow](https://user-images.githubusercontent.com/115734048/211103352-24278aa9-479e-4ce1-ab59-6940341f65cb.gif)

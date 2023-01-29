@@ -1,7 +1,7 @@
 # **Grocery Shop**
-> Project with owner mode and customer mode
-   >- Using dictionary to collect and accessing data to modify in key values such as types, price and quantity.
-   >- Using csv to store data in excel 
+Project with owner mode and customer mode
+   - Using dictionary to collect and accessing data to modify in key values such as types, price and quantity.
+   - Using csv to store data in excel 
   
   
 

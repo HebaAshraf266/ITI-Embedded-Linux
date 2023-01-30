@@ -1,1 +1,6 @@
  
+Display all record 
+
+Heba Ashraf : 1234
+Nada Ashraf : 5678
+Ahmed Morgan : 8654

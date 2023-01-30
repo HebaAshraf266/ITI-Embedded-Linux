@@ -3,12 +3,6 @@
  
 **01- Python**
 
-**02- Linux administration** 
-
-**03-Raspberry pi**
-
-> 
-#01- Python
 
 ## This repository contains all python projects done in ITI journey
  
@@ -35,3 +29,9 @@
  **05-ATM GUI** 
  
  ![ATM](https://user-images.githubusercontent.com/115734048/215300188-5e6359ba-07e6-45a5-823c-2ee7cb38ec7c.gif)
+ 
+ 
+ **02- Linux administration** 
+ 
+ 
+ **03-Raspberry pi**

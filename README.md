@@ -1,5 +1,6 @@
  # ITI Embedded Linux
- This repository contains the embedded Linux core  in ITI with detailed  projects in each part which are: 
+ 
+ **This repository contains all embedded Linux core projects done in ITI journey which are:**
  
 ## **01- Python**
  

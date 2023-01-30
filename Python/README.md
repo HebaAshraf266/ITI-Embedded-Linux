@@ -3,8 +3,8 @@
 ## This repository contains all python projects done in ITI journey
  **01-Rotary Arrow**
  
-![RotatingArrow](https://user-images.githubusercontent.com/115734048/211103352-24278aa9-479e-4ce1-ab59-6940341f65cb.gif)
- 
+ ![ARROW](https://user-images.githubusercontent.com/115734048/215369204-b77c3c13-100d-4869-a5d9-151f471c6bbe.gif)
+
  
  **02-Calculator** 
   
